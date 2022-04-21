@@ -73,11 +73,37 @@ a:hover {
     border-radius: 100%;
     transition: 1s;
     transform: scale(1.05);
-    box-shadow: 0px 50px 10px rgba(0,0,0, 0.2);
+    box-shadow: 0px 40px 10px rgba(0,0,0, 0.2);
 }
 
 /* FOOTER */
 footer {
     height: 150px;
     background-color: #F5F8EB;
+}
+
+/* RESPONSIVE */
+@media only screen and (max-width: 768px) {
+    nav {
+        margin: 40px 30px;
+    }
+    .main {
+        margin: 30px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .content {
+        width: 100%;
+        align-items: center;
+    }
+    .judul {
+        margin-top: 50px;
+    }
+    .right img {
+        width: 300px;
+        height: 250px;
+    }
+    .left p {
+        width: 100%;
+    }
 }
